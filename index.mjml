@@ -1,0 +1,48 @@
+<mjml>
+    <mj-head>
+        
+    </mj-head>
+    <mj-body>
+<!--section 1 Image-->
+    <mj-section>
+        <mj-column>
+            <mj-image src="" alt="" />
+        </mj-column>   
+    </mj-section>
+<!--section 2-->
+    <mj-section>
+        <mj-column>
+       <!--Titre-->   
+            <mj-text>
+                Lille métropole, notre partenaire, Grand Groupe d'Assurance, recherche un(e) assistant(e) commercial(e) dans le cadre d'une alternance. 
+            </mj-text>
+        <!--Texte-->
+            <mj-text>
+                {{PRENOM}}, Bien que vous ayez le profil pour réaliser un BTS Assurance, il est toujours difficile de trouver une entreprise en alternance. Chez Ecosup, nous travaillons avec des entreprises partenaires à la recherche de futurs collaborateurs. Rencontrons-nous lors d'un entretien de motivation pour concrétiser rapidement votre futur partenariat ! 
+            </mj-text>
+        <!--Button-->
+            <mj-button>
+                contactez-nous
+            </mj-button>
+        </mj-column>       
+    </mj-section>
+<!--section 3 Signature-->
+    <mj-section>
+        <mj-column>
+            <mj-text>
+                Christian Annaloro
+            </mj-text>
+            <mj-text>
+                Responsable pédagogique
+            </mj-text>
+            <mj-text>
+                Ecosup Assurance
+            </mj-text>
+        </mj-column>
+    </mj-section>
+<!--section 4 Adresse-->
+    <mj-section>
+        
+    </mj-section>
+    </mj-body>
+</mjml>
