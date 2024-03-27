@@ -1,48 +1,78 @@
 <mjml>
     <mj-head>
-        
+       <mj-font name="Roboto" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" />
+    <mj-title>Email Assurance version 2</mj-title>
+       <mj-attributes>
+            <mj-class name="Dtitle" font-size="24px" font-weight="300" line-height="28px" color="#684092"/>
+            <mj-class name="Dtexte" font-size="16px" font-weight="300" line-height="20px" color="#2D3748" />
+            <mj-class name="Dadresse" font-size="12px" font-weight="300" line-height="16px" color="#2D3748" />
+            <mj-class name="Dreglement" font-size="10px" font-weight="300" line-height="14px" color="#2D3748" />
+            <mj-all font-family="Roboto, Arial, sans-serif" />
+       </mj-attributes>
     </mj-head>
-    <mj-body>
+    <mj-body background-color="#fafafa">
 <!--section 1 Image-->
-    <mj-section>
-        <mj-column>
+    <mj-section background-color="#ffffff" padding="0">
+        <mj-column >
             <mj-image src="" alt="" />
         </mj-column>   
     </mj-section>
 <!--section 2-->
-    <mj-section>
-        <mj-column>
+    <mj-section background-color="#ffffff" padding="0">
+        <mj-column padding="10px 60px">
        <!--Titre-->   
-            <mj-text>
-                Lille métropole, notre partenaire, Grand Groupe d'Assurance, recherche un(e) assistant(e) commercial(e) dans le cadre d'une alternance. 
+            <mj-text padding="0 0 6px 0" mj-class="Dtitle">
+                Lille métropole, notre partenaire,<span style="font-weight:500;"> Grand Groupe d'Assurance</span>, recherche un(e)<span style="font-weight:500;">assistant(e) commercial(e)</span> dans le cadre d'une alternance. 
             </mj-text>
         <!--Texte-->
-            <mj-text>
-                {{PRENOM}}, Bien que vous ayez le profil pour réaliser un BTS Assurance, il est toujours difficile de trouver une entreprise en alternance. Chez Ecosup, nous travaillons avec des entreprises partenaires à la recherche de futurs collaborateurs. Rencontrons-nous lors d'un entretien de motivation pour concrétiser rapidement votre futur partenariat ! 
+            <mj-text padding="0" mj-class="Dtexte">
+                {{contact.PRENOM}}, Bien que vous ayez le profil pour réaliser un <span style="font-weight:500;">BTS Assurance</span>, il est toujours difficile de trouver une entreprise en alternance. Chez Ecosup, nous travaillons avec des entreprises partenaires à la recherche de futurs collaborateurs. Rencontrons-nous lors d'un <span style="font-weight:500;">entretien de motivation</span> pour concrétiser rapidement votre futur partenariat ! 
             </mj-text>
         <!--Button-->
-            <mj-button>
+            <mj-button >
                 contactez-nous
             </mj-button>
         </mj-column>       
     </mj-section>
 <!--section 3 Signature-->
-    <mj-section>
-        <mj-column>
-            <mj-text>
-                Christian Annaloro
+    <mj-section background-color="#ffffff" padding="0">
+        <mj-column padding="10px 20px 30px 20px">
+            <mj-text padding="0" align="center" mj-class="Dtexte">
+                Christian <span style="text-transform:uppercase">Annaloro</span>
             </mj-text>
-            <mj-text>
+            <mj-text padding="0" align="center" mj-class="Dtexte">
                 Responsable pédagogique
             </mj-text>
-            <mj-text>
+            <mj-text padding="0" align="center" mj-class="Dtexte">
                 Ecosup Assurance
             </mj-text>
         </mj-column>
     </mj-section>
 <!--section 4 Adresse-->
-    <mj-section>
-        
+    <mj-section background-color="#fafafa">
+        <mj-column padding="10px 20px">
+            <mj-image align="center" width="140px" padding="0" src="https://img.mailinblue.com/3403292/images/content_library/original/65ffed0f9d8a3bdbe17813ef.png" alt="logo Ecosup Campus" />
+            <mj-text align="center" padding="0" mj-class="Dadresse" >
+                17 place Charles et Albert Roussel
+            </mj-text>
+            <mj-text align="center" padding="0" mj-class="Dadresse" text-transform="uppercase">
+                59200 tourcoing
+            </mj-text>
+        </mj-column>
+    </mj-section>
+<!--Obligation réglementaire-->
+    <mj-section background-color="#fafafa">
+        <mj-column padding="0 60px">
+            <mj-text align="center" mj-class="Dreglement" padding="0">
+                Pour être sûr(e) de recevoir nos communications, ajoute contact@ecosup-campus.fr dans ton carnet d'adresses.
+            </mj-text>
+            <mj-text align="center" mj-class="Dreglement" padding="0"> 
+                Si tu ne visualise pas cet email correctement, clique <a href="{{ mirror }}">ici</a>
+            </mj-text>
+            <mj-text align="center" mj-class="Dreglement" padding="0" text-transform="uppercase">
+                <a href="{{ unsubscribe }}">se désinscrire</a>
+            </mj-text>
+        </mj-column>
     </mj-section>
     </mj-body>
 </mjml>
