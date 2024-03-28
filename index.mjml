@@ -10,6 +10,10 @@
             <mj-all font-family="Roboto, Arial, sans-serif" />
        </mj-attributes>
        <mj-style>
+            .hover:hover td, .hover:hover a{ 
+            background-color:#684092 !important;
+            }
+
             @media (max-width: 480px){
                 .Mpadding td{
                     padding-left:5px !important;
@@ -44,7 +48,7 @@
                 {{contact.PRENOM}}, Bien que vous ayez le profil pour réaliser un <span style="font-weight:500;">BTS Assurance</span>, il est toujours difficile de trouver une entreprise en alternance. Chez Ecosup, nous travaillons avec des entreprises partenaires à la recherche de futurs collaborateurs. Rencontrons-nous lors d'un <span style="font-weight:500;">entretien de motivation</span> pour concrétiser rapidement votre futur partenariat ! 
             </mj-text>
         <!--Button-->
-            <mj-button href="#" background-color="#BA4995" color="#ffffff" font-size="16px" font-weight="500">
+            <mj-button href="#" css-class="hover" background-color="#BA4995" color="#ffffff" font-size="16px" font-weight="500">
                 contactez-nous
             </mj-button>
         </mj-column>       
