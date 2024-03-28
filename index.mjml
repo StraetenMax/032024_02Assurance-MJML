@@ -1,7 +1,7 @@
 <mjml>
     <mj-head>
        <mj-font name="Roboto" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" />
-    <mj-title>Email Assurance version 2</mj-title>
+       <mj-title>Email Assurance version 2</mj-title>
        <mj-attributes>
             <mj-class name="Dtitle" font-size="24px" font-weight="300" line-height="28px" color="#684092"/>
             <mj-class name="Dtexte" font-size="16px" font-weight="300" line-height="20px" color="#2D3748" />
@@ -9,27 +9,42 @@
             <mj-class name="Dreglement" font-size="10px" font-weight="300" line-height="14px" color="#2D3748" />
             <mj-all font-family="Roboto, Arial, sans-serif" />
        </mj-attributes>
+       <mj-style>
+            @media (max-width: 480px){
+                .Mpadding td{
+                    padding-left:5px !important;
+                    padding-right:5px !important;
+                }
+                .Malign div{
+                    text-align:center !important;
+                }
+                .Mfooter td{
+                    padding-left:20px !important;
+                    padding-right:20px !important;
+                }
+            }
+       </mj-style>
     </mj-head>
     <mj-body background-color="#fafafa">
 <!--section 1 Image-->
     <mj-section background-color="#ffffff" padding="0">
         <mj-column >
-            <mj-image src="" alt="" />
+            <mj-image padding="0" src="img/LetAsLogo02_032024.jpg" alt="Entreprise d'assurance - protection de la famille" />
         </mj-column>   
     </mj-section>
 <!--section 2-->
     <mj-section background-color="#ffffff" padding="0">
-        <mj-column padding="10px 60px">
+        <mj-column padding="10px 60px" css-class="Mpadding">
        <!--Titre-->   
-            <mj-text padding="0 0 6px 0" mj-class="Dtitle">
-                Lille métropole, notre partenaire,<span style="font-weight:500;"> Grand Groupe d'Assurance</span>, recherche un(e)<span style="font-weight:500;">assistant(e) commercial(e)</span> dans le cadre d'une alternance. 
+            <mj-text padding="0 0 6px 0" mj-class="Dtitle" css-class="Malign">
+                Lille métropole, notre partenaire,<span style="font-weight:500;"> Grand Groupe d'Assurance</span>, recherche un(e) <span style="font-weight:500;">assistant(e) commercial(e)</span> dans le cadre d'une alternance. 
             </mj-text>
         <!--Texte-->
-            <mj-text padding="0" mj-class="Dtexte">
+            <mj-text padding="0" mj-class="Dtexte" css-class="Malign">
                 {{contact.PRENOM}}, Bien que vous ayez le profil pour réaliser un <span style="font-weight:500;">BTS Assurance</span>, il est toujours difficile de trouver une entreprise en alternance. Chez Ecosup, nous travaillons avec des entreprises partenaires à la recherche de futurs collaborateurs. Rencontrons-nous lors d'un <span style="font-weight:500;">entretien de motivation</span> pour concrétiser rapidement votre futur partenariat ! 
             </mj-text>
         <!--Button-->
-            <mj-button >
+            <mj-button href="#" background-color="#BA4995" color="#ffffff" font-size="16px" font-weight="500">
                 contactez-nous
             </mj-button>
         </mj-column>       
@@ -62,7 +77,7 @@
     </mj-section>
 <!--Obligation réglementaire-->
     <mj-section background-color="#fafafa">
-        <mj-column padding="0 60px">
+        <mj-column padding="0 60px" css-class="Mfooter">
             <mj-text align="center" mj-class="Dreglement" padding="0">
                 Pour être sûr(e) de recevoir nos communications, ajoute contact@ecosup-campus.fr dans ton carnet d'adresses.
             </mj-text>
